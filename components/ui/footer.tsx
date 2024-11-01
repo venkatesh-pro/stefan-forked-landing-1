@@ -28,21 +28,21 @@ export default function Footer() {
             alt="Footer illustration"
           />
         </div>
-        <div className="flex items-center justify-center h-[280px]">
+        <div className="flex items-center justify-center h-[320px]">
           <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-right">
-            <div className="mb-3">
+            <div className="mb-3 flex items-center justify-center">
               <Link
                 href="/"
                 className=" shrink-0 flex flex-col items-center"
                 aria-label="McKinsly"
               >
-                <Image src={logo} alt="McKinsly Logo" width={32} height={32} />
-                <h1 className={`${poppins.className} font-semibold ml-1`}>
+                <Image src={logo} alt="McKinsly Logo" width={57} height={57} />
+                <h1 className={`${poppins.className} font-semibold ml-1 mt-3`}>
                   McKinsly
                 </h1>
               </Link>{" "}
             </div>
-            <ul className="flex items-center justify-center">
+            <ul className="flex items-center justify-center mt-3">
               <li>
                 <a
                   className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
@@ -133,7 +133,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="text-sm">
+            <div className="text-sm text-center mt-2" >
               <p className="mb-3 text-indigo-200/65">© 2024 Acclogic Inc.</p>
             </div>
           </div>
