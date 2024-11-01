@@ -65,36 +65,38 @@ export default function ModalVideo({
           />
         </figure>
         {/* Play icon */}
-        <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
+        <span className="pointer-events-none absolute p-3.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
           <span className="relative flex items-center gap-3">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={20}
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
               fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill="url(#pla)"
-                fillRule="evenodd"
-                d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10Zm3.5-10-5-3.5v7l5-3.5Z"
-                clipRule="evenodd"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM13.5 10L8.5 6.5V13.5L13.5 10Z"
+                fill="url(#paint0_linear_201_46)"
               />
               <defs>
                 <linearGradient
-                  id="pla"
-                  x1={10}
-                  x2={10}
-                  y1={0}
-                  y2={20}
+                  id="paint0_linear_201_46"
+                  x1="-1.34152e-07"
+                  y1="6.09014"
+                  x2="20"
+                  y2="13.9099"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#6366F1" />
-                  <stop offset={1} stopColor="#6366F1" stopOpacity=".72" />
+                  <stop stop-color="#AEAFFF" />
+                  <stop offset="1" stop-color="#F495FF" />
                 </linearGradient>
               </defs>
             </svg>
+
             <span className="text-sm font-medium leading-tight text-gray-300">
-              Watch Demo
+              Overview
               <span className="text-gray-600"> - </span>
               3:47
             </span>
