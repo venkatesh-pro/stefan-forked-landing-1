@@ -29,7 +29,8 @@ export default function Cta() {
               <div data-aos="fade-up" data-aos-delay={400}>
                 <a
                   className="btn group mb-4 w-full bg-gradient-to-r from-[#4F46E5] to-[#FF23ED] bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto rounded-3xl px-6"
-                  href="#0"
+                  href="https://www.indiegogo.com/projects/mckinsly-take-back-your-time#/"
+                  target="_blank"
                 >
                   <span className="relative inline-flex items-center">
                     Early Access
