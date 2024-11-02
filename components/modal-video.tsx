@@ -121,7 +121,6 @@ export default function ModalVideo({
                   position: "relative",
                   overflow: "hidden",
                   width: "100%",
-                  background: "red",
                   paddingTop: "56.25%", // 16:9 Aspect Ratio
                 }}
               >
