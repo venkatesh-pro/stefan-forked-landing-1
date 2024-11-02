@@ -12,8 +12,6 @@ interface ModalVideoProps {
   thumbHeight: number;
   thumbAlt: string;
   video: string;
-  videoWidth: number;
-  videoHeight: number;
 }
 
 export default function ModalVideo({
@@ -22,8 +20,6 @@ export default function ModalVideo({
   thumbHeight,
   thumbAlt,
   video,
-  videoWidth,
-  videoHeight,
 }: ModalVideoProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -118,18 +114,33 @@ export default function ModalVideo({
           <div className="mx-auto flex h-full max-w-6xl items-center">
             <DialogPanel
               transition
-              className="aspect-video max-h-full w-full overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+              className="aspect-video max-h-full w-[100vw] overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
             >
-              <video
-                ref={videoRef}
-                width={videoWidth}
-                height={videoHeight}
-                loop
-                controls
+              <div
+                style={{
+                  position: "relative",
+                  overflow: "hidden",
+                  width: "100%",
+                  background: "red",
+                  paddingTop: "56.25%", // 16:9 Aspect Ratio
+                }}
               >
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                <iframe
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.youtube.com/embed/KL3Sfbh8jic?si=L46pQSAdZF69jzig"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </DialogPanel>
           </div>
         </div>
