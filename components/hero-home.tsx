@@ -1,4 +1,4 @@
-import VideoThumb from "@/public/images/McKinsley-Main-Image.jpeg";
+import VideoThumb from "@/public/images/37ab4c06-357e-40ff-8375-45d5ef41d27b.png";
 import ModalVideo from "@/components/modal-video";
 
 export default function HeroHome() {
@@ -13,7 +13,7 @@ export default function HeroHome() {
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
               data-aos="fade-up"
             >
-              Take your time back.
+              Take back your time.
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -27,7 +27,8 @@ export default function HeroHome() {
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a
                     className="btn group mb-4 w-full bg-gradient-to-r from-[#4F46E5] to-[#FF23ED] bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto rounded-3xl px-6"
-                    href="#0"
+                    href="https://www.indiegogo.com/projects/mckinsly-take-back-your-time#/"
+                    target="_blank"
                   >
                     <span className="relative inline-flex items-center">
                       Early Access
@@ -46,7 +47,7 @@ export default function HeroHome() {
             thumbWidth={1104}
             thumbHeight={576}
             thumbAlt="Modal video thumbnail"
-            video="videos//video.mp4"
+            video="videos//Brendan_Vid.mp4"
             videoWidth={1920}
             videoHeight={1080}
           />

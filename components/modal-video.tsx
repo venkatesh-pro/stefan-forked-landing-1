@@ -98,7 +98,7 @@ export default function ModalVideo({
             <span className="text-sm font-medium leading-tight text-gray-300">
               Overview
               <span className="text-gray-600"> - </span>
-              3:47
+              1:31
             </span>
           </span>
         </span>
