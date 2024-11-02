@@ -110,11 +110,11 @@ export default function ModalVideo({
           transition
           className="fixed inset-0 z-[99999] bg-black/70 transition-opacity duration-300 ease-out data-[closed]:opacity-0"
         />
-        <div className="fixed inset-0 z-[99999] flex px-4 py-6 sm:px-6">
+        <div className="fixed flex items-center justify-center inset-0 z-[99999] px-4 py-6 sm:px-6 ">
           <div className="mx-auto flex h-full max-w-6xl items-center">
             <DialogPanel
               transition
-              className="aspect-video max-h-full w-[100vw] overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
+              className="w-[100vw] p-3"
             >
               <div
                 style={{
@@ -129,8 +129,11 @@ export default function ModalVideo({
                     position: "absolute",
                     top: 0,
                     left: 0,
+                    bottom: 0,
+                    right: 0,
                     width: "100%",
                     height: "100%",
+                    borderRadius:'20px'
                   }}
                   src="https://www.youtube.com/embed/KL3Sfbh8jic?si=L46pQSAdZF69jzig"
                   title="YouTube video player"
